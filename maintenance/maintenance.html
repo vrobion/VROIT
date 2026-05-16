@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site en maintenance</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    .loader {
+      margin: 30px auto;
+      width: 50px;
+      height: 50px;
+      border: 5px solid #334155;
+      border-top: 5px solid #38bdf8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .small {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>🛠️ Site en maintenance</h1>
+
+    <div class="loader"></div>
+
+    <p>
+      Nous améliorons actuellement le site afin de vous proposer de meilleurs guides et outils IT.
+      <br><br>
+      Merci de revenir plus tard.
+    </p>
+
+    <div class="small">
+      Vroit - IT & procédures
+    </div>
+  </div>
+
+</body>
+</html>
