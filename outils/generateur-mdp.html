@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur de mot de passe</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🔐 Générateur de mot de passe</h1>
+</header>
+
+<section class="container">
+
+  <button onclick="generate()">Générer</button>
+
+  <p id="result" style="font-size:20px;margin-top:20px;"></p>
+
+</section>
+
+<script>
+function generate() {
+  const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
+  let pass = "";
+  for (let i = 0; i < 12; i++) {
+    pass += chars[Math.floor(Math.random() * chars.length)];
+  }
+  document.getElementById("result").innerText = pass;
+}
+</script>
+
+</body>
+</html>
